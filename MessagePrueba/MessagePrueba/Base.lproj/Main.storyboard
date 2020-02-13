@@ -225,7 +225,7 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatBootTableViewCell" rowHeight="51" id="6rY-iP-ytA" customClass="ChatBootTableViewCell" customModule="MessagePrueba" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatBootTableViewCell" rowHeight="51" id="6rY-iP-ytA" customClass="ChatBootTableViewCell" customModule="MessagePrueba" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6rY-iP-ytA" id="j2l-Hv-5zc">
@@ -286,7 +286,7 @@
                                             <outlet property="lblSender" destination="fGp-X4-j2g" id="Fp8-IF-SkY"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatBootTableViewCell2" rowHeight="51" id="Wea-bk-L0o" customClass="ChatBootTableViewCell" customModule="MessagePrueba" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatBootTableViewCell2" rowHeight="51" id="Wea-bk-L0o" customClass="ChatBootTableViewCell" customModule="MessagePrueba" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="79" width="320" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wea-bk-L0o" id="iBv-M4-7SU">
@@ -298,6 +298,9 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v8-oR-VMh" customClass="CSMLabel" customModule="MessagePrueba" customModuleProvider="target">
                                                             <rect key="frame" x="3" y="5" width="84" height="15"/>
+                                                            <accessibility key="accessibilityConfiguration">
+                                                                <accessibilityTraits key="traits" link="YES" selected="YES" staticText="YES"/>
+                                                            </accessibility>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="DqM-iU-LMV"/>
                                                             </constraints>
@@ -407,9 +410,6 @@
                             <constraint firstItem="0vz-Rk-ZRj" firstAttribute="leading" secondItem="Mhp-FD-o4O" secondAttribute="leading" id="pmh-Co-jde"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mhp-FD-o4O"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="DQ2-xk-Oog" appends="YES" id="XkW-zw-QjB"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="MAPSALUD" id="HTx-vR-BQa"/>
                     <connections>
@@ -420,11 +420,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l54-TB-fMV" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="DQ2-xk-Oog">
-                    <connections>
-                        <action selector="tapCerrarTeclado:" destination="6Oo-Va-iKe" id="5rI-rg-B01"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5758.125" y="132.04225352112675"/>
         </scene>

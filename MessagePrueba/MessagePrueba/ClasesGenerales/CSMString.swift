@@ -62,4 +62,35 @@ public extension String{
         return self.replacingCharacters(in: start ..< end, with: replacementString)
     }
     
+    func minCaracteresPassowrd(caracteres : Int) -> Bool{
+        
+        if self.count < caracteres {
+            return false
+        }
+        
+        let soloLetras = self.components(separatedBy: CharacterSet(charactersIn: "1234567890").inverted).joined(separator: "")
+        
+        if soloLetras.count == self.count{
+            return false
+        }
+        
+        return true
+    }
+    
+    func openScheme(){
+        
+        if let scheme = self.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed), let url = URL(string: scheme){
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: {
+                (success) in
+                print("Open \(self): \(success)")
+            })
+            
+        }
+    }
+    
+    var digits: String {
+        return components(separatedBy: CharacterSet.decimalDigits.inverted)
+            .joined()
+    }
 }

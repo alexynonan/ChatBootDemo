@@ -57,7 +57,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
     
     @objc func listarChatBoot(){
         self.refreshControll.beginRefreshing()
-        self.refBoot = Database.database().reference(withPath: "chatBoot")
+        self.refBoot = Database.database().reference(withPath: "chatBootBeta")
     
         self.refBoot.observe(DataEventType.value, with: { (array) in
                 self.refreshControll.endRefreshing()
@@ -90,6 +90,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
         let request = ApiAI.shared().textRequest()
             
         if let text = self.txtMessage.text, text != "" {
+            self.view.isUserInteractionEnabled = false
             self.agregarUsuario(text)
             request?.query = text
         } else {
@@ -114,12 +115,13 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
         let speechUtterance = AVSpeechUtterance(string: text)
         speechSynthesizer.speak(speechUtterance)
         self.agregarBoot(text)
+        self.view.isUserInteractionEnabled = true
         print(text)
     }
     
     func agregarBoot(_ respuesta : String){
     
-        self.refBoot = Database.database().reference().child("chatBoot").childByAutoId()
+        self.refBoot = Database.database().reference().child("chatBootBeta").childByAutoId()
         
         let dic : [String : Any] = ["respuesta" : "\(respuesta)",
                                     "sender" : "Boot",
@@ -129,7 +131,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
     }
     func agregarUsuario(_ respuesta : String){
     
-        self.refBoot = Database.database().reference().child("chatBoot").childByAutoId()
+        self.refBoot = Database.database().reference().child("chatBootBeta").childByAutoId()
         
         let dic : [String : Any] = ["respuesta" : "\(respuesta)",
                                     "sender" : "cliente",
@@ -184,4 +186,17 @@ extension ChatBootViewController : UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let obj3 = self.arrayBoot[indexPath.row]
+        
+        if let obj4 : String = obj3.respuesta{
+            if obj4 == "https://www.mapsalud.com"{
+                obj4.openScheme()
+            }else{
+                print("No es link")
+            }
+        }else{
+            print("No es link")
+        }
+    }
 }
