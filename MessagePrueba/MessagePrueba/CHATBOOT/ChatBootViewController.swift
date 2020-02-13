@@ -143,7 +143,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
             let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey]
             let keyBoardRect = frame?.cgRectValue
             if let keyBoardHeight = keyBoardRect?.height {
-                self.bottomScroll.constant = keyBoardHeight - self.vistaFormulario.bounds.height - 13
+                self.bottomScroll.constant = keyBoardHeight 
                 UIView.animate(withDuration: 0.1, animations: {
                     self.view.layoutIfNeeded()
                     

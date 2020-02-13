@@ -15,7 +15,6 @@
 		EA28308A23F46F7B00BEE070 /* ChatBootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28308923F46F7B00BEE070 /* ChatBootTableViewCell.swift */; };
 		EA86C6CB23DB890100FFE0C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */; };
 		EA9E773523D6733A005FC922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E773423D6733A005FC922 /* AppDelegate.swift */; };
-		EA9E773723D6733A005FC922 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E773623D6733A005FC922 /* SceneDelegate.swift */; };
 		EA9E773923D6733A005FC922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E773823D6733A005FC922 /* ViewController.swift */; };
 		EA9E773C23D6733A005FC922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9E773A23D6733A005FC922 /* Main.storyboard */; };
 		EA9E773E23D6733C005FC922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9E773D23D6733C005FC922 /* Assets.xcassets */; };
@@ -62,7 +61,6 @@
 		EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA9E773123D6733A005FC922 /* MessagePrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagePrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9E773423D6733A005FC922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA9E773623D6733A005FC922 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA9E773823D6733A005FC922 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA9E773B23D6733A005FC922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9E773D23D6733C005FC922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				EA9E774823D67362005FC922 /* MessagePrueba.entitlements */,
 				EA28308623F46EE000BEE070 /* CHATBOOT */,
 				EA9E773423D6733A005FC922 /* AppDelegate.swift */,
-				EA9E773623D6733A005FC922 /* SceneDelegate.swift */,
 				EA9E773A23D6733A005FC922 /* Main.storyboard */,
 				EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */,
 				EA9E773D23D6733C005FC922 /* Assets.xcassets */,
@@ -382,7 +379,6 @@
 				EA9E77A723D74709005FC922 /* CSMTextView.swift in Sources */,
 				EA9E77B723D74709005FC922 /* CSMTableView.swift in Sources */,
 				EA9E77BE23D74709005FC922 /* CSMUserAlters.swift in Sources */,
-				EA9E773723D6733A005FC922 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -512,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
