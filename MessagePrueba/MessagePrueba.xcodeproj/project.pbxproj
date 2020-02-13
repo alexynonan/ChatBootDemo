@@ -48,6 +48,7 @@
 		EA9E77C023D74709005FC922 /* CSMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A423D74709005FC922 /* CSMImageView.swift */; };
 		EA9E77C123D74709005FC922 /* CSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A523D74709005FC922 /* CSMView.swift */; };
 		EA9E77C223D74709005FC922 /* CSMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A623D74709005FC922 /* CSMString.swift */; };
+		EAFD2A6923F5E97800B6BD6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		EA9E77A423D74709005FC922 /* CSMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageView.swift; sourceTree = "<group>"; };
 		EA9E77A523D74709005FC922 /* CSMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
 		EA9E77A623D74709005FC922 /* CSMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+		EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB54136203A3212DBE9B5D1F /* Pods_MessagePrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagePrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 				EA9E774823D67362005FC922 /* MessagePrueba.entitlements */,
 				EA28308623F46EE000BEE070 /* CHATBOOT */,
 				EA9E773423D6733A005FC922 /* AppDelegate.swift */,
+				EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */,
 				EA9E773A23D6733A005FC922 /* Main.storyboard */,
 				EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */,
 				EA9E773D23D6733C005FC922 /* Assets.xcassets */,
@@ -353,6 +356,7 @@
 				EA9E77AE23D74709005FC922 /* CSMLocalNotificationManager.swift in Sources */,
 				EA0C160E23D79E6C001656D0 /* RegistroViewController.swift in Sources */,
 				EA9E77AD23D74709005FC922 /* CSMKeyChain.swift in Sources */,
+				EAFD2A6923F5E97800B6BD6D /* SceneDelegate.swift in Sources */,
 				EA9E77B523D74709005FC922 /* CSMTextField.swift in Sources */,
 				EA9E77B123D74709005FC922 /* CSMImage.swift in Sources */,
 				EA9E77C023D74709005FC922 /* CSMImageView.swift in Sources */,
@@ -454,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
