@@ -283,7 +283,6 @@
                                         <connections>
                                             <outlet property="lblRespuesta" destination="f1m-hd-5tT" id="1hN-F3-rSC"/>
                                             <outlet property="lblSender" destination="fGp-X4-j2g" id="Fp8-IF-SkY"/>
-                                            <outlet property="viewBoot" destination="j4b-GH-m2z" id="ZZU-iB-IpB"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatBootTableViewCell2" rowHeight="51" id="Wea-bk-L0o" customClass="ChatBootTableViewCell" customModule="MessagePrueba" customModuleProvider="target">
@@ -315,7 +314,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.86255685150000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="3v8-oR-VMh" firstAttribute="leading" secondItem="e6c-jI-z6Q" secondAttribute="leading" constant="3" id="NSk-fu-RE5"/>
                                                         <constraint firstAttribute="trailing" secondItem="a9d-Sp-O6c" secondAttribute="trailing" constant="8" id="OX9-Wt-drr"/>
@@ -345,7 +344,6 @@
                                         <connections>
                                             <outlet property="lblRespuesta" destination="3v8-oR-VMh" id="ihd-GG-lJS"/>
                                             <outlet property="lblSender" destination="a9d-Sp-O6c" id="iJZ-bw-8J3"/>
-                                            <outlet property="viewBoot" destination="e6c-jI-z6Q" id="rCU-ht-Gmv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -12,18 +12,9 @@ class ChatBootTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblRespuesta : UILabel!
     @IBOutlet weak var lblSender : UILabel!
-    @IBOutlet weak var viewBoot : UIView!
     
     var objBoot : BootBE!{
         didSet{
-            
-            if self.objBoot.id == 0{
-                self.viewBoot.backgroundColor = .colorFromHexString("#007AFF", withAlpha: 1)
-
-            }else{
-                self.viewBoot.backgroundColor = .white
-            }
-            
             self.lblRespuesta.text! = self.objBoot.respuesta
             self.lblSender.text! = self.objBoot.sender
         }
