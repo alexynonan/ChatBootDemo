@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import ApiAI
 import AVFoundation
+import MessageUI
+
 struct BootBE {
     var respuesta  = ""
     var sender  = ""
@@ -33,6 +35,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.tblBoot.addSubview(self.refreshControll)
         self.listarChatBoot()
 
@@ -57,11 +60,12 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
     
     @objc func listarChatBoot(){
         self.refreshControll.beginRefreshing()
-        self.refBoot = Database.database().reference(withPath: "chatBootBeta")
+        self.refBoot = Database.database().reference(withPath: "chatBootBeta5")
     
         self.refBoot.observe(DataEventType.value, with: { (array) in
                 self.refreshControll.endRefreshing()
                 self.arrayBoot.removeAll()
+            
                 for arrayList in array.children.allObjects as! [DataSnapshot]{
                     
                     let menssage = arrayList.value as? [String : AnyObject]
@@ -84,11 +88,11 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
                 self.showAltert(withTitle: "Mapsalud", withMessage: errorMessage.localizedDescription, withAcceptButton: "Aceptar", withCompletion: nil)
             }
     }
-    
+ 
     @IBAction func btnEnviar(){
         
         let request = ApiAI.shared().textRequest()
-            
+
         if let text = self.txtMessage.text, text != "" {
             self.view.isUserInteractionEnabled = false
             self.agregarUsuario(text)
@@ -97,10 +101,27 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
+//        request?.setCompletionBlockSuccess({ (request, response) in
+//            print(request?.response)
+//            let response = request?.response as! AIResponse
+//
+//            if let textResponse = response.result.fulfillment.speech {
+//                self.speechAndText(text: textResponse)
+//            }
+//        }, failure: { (request, error) in
+//            print(error!)
+//        })
+        
         request?.setMappedCompletionBlockSuccess({ (request, response) in
+
+            print(request?.response)
+
             let response = response as! AIResponse
+
             if let textResponse = response.result.fulfillment.speech {
                 self.speechAndText(text: textResponse)
+            }else{
+                print("fallo")
             }
         }, failure: { (request, error) in
             print(error!)
@@ -118,10 +139,10 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
         self.view.isUserInteractionEnabled = true
         print(text)
     }
-    
+        
     func agregarBoot(_ respuesta : String){
     
-        self.refBoot = Database.database().reference().child("chatBootBeta").childByAutoId()
+        self.refBoot = Database.database().reference().child("chatBootBeta5").childByAutoId()
         
         let dic : [String : Any] = ["respuesta" : "\(respuesta)",
                                     "sender" : "Boot",
@@ -131,7 +152,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
     }
     func agregarUsuario(_ respuesta : String){
     
-        self.refBoot = Database.database().reference().child("chatBootBeta").childByAutoId()
+        self.refBoot = Database.database().reference().child("chatBootBeta5").childByAutoId()
         
         let dic : [String : Any] = ["respuesta" : "\(respuesta)",
                                     "sender" : "cliente",
@@ -160,7 +181,7 @@ class ChatBootViewController: UIViewController, UITextFieldDelegate {
     
     @objc func keyBoardWillHide(notification: Notification){
         
-        self.bottomScroll.constant = self.vistaFormulario.bounds.height
+        self.bottomScroll.constant = 0
         UIView.animate(withDuration: 0.1, animations: {
             self.view.layoutIfNeeded()
         })
@@ -186,17 +207,4 @@ extension ChatBootViewController : UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let obj3 = self.arrayBoot[indexPath.row]
-        
-        if let obj4 : String = obj3.respuesta{
-            if obj4 == "https://www.mapsalud.com"{
-                obj4.openScheme()
-            }else{
-                print("No es link")
-            }
-        }else{
-            print("No es link")
-        }
-    }
 }

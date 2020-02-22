@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension String{
+extension String{
     
     func base64Decode() -> Data? {
         
@@ -93,4 +93,5 @@ public extension String{
         return components(separatedBy: CharacterSet.decimalDigits.inverted)
             .joined()
     }
+    
 }
