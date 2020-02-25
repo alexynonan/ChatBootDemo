@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         let configuration = AIDefaultConfiguration()
-        configuration.clientAccessToken = "1a1278fee2da4c2c876c6fb35dbacfd8"
+        configuration.clientAccessToken = "fa1c1fa78d844201817d17b98265d595"
         let apiai = ApiAI.shared()
         apiai?.configuration = configuration
         

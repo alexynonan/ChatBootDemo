@@ -14,10 +14,11 @@
 		EA28308823F46EFC00BEE070 /* ChatBootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28308723F46EFC00BEE070 /* ChatBootViewController.swift */; };
 		EA28308A23F46F7B00BEE070 /* ChatBootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28308923F46F7B00BEE070 /* ChatBootTableViewCell.swift */; };
 		EA6850E82400327000C54656 /* PruebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6850E72400327000C54656 /* PruebaViewController.swift */; };
-		EA6850EE24004B3700C54656 /* CSMUserAlters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6850ED24004B3700C54656 /* CSMUserAlters.swift */; };
 		EA6850F324007C7D00C54656 /* CMPSChatBotWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6850F224007C7D00C54656 /* CMPSChatBotWS.swift */; };
 		EA6850F5240081DF00C54656 /* CMPSChatBotBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6850F4240081DF00C54656 /* CMPSChatBotBC.swift */; };
-		EA7F0A6723FDF4290016A7F7 /* ALEXLABEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F0A6623FDF4290016A7F7 /* ALEXLABEL.swift */; };
+		EA8101D3240484030070268D /* CMPSFirebaseWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8101D2240484030070268D /* CMPSFirebaseWS.swift */; };
+		EA8101D524048E1F0070268D /* CMPSFirebaseBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8101D424048E1F0070268D /* CMPSFirebaseBC.swift */; };
+		EA8418CB24019D99006DF7FA /* CSMUserAlters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8418CA24019D99006DF7FA /* CSMUserAlters.swift */; };
 		EA86C6CB23DB890100FFE0C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */; };
 		EA9E773523D6733A005FC922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E773423D6733A005FC922 /* AppDelegate.swift */; };
 		EA9E773923D6733A005FC922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E773823D6733A005FC922 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		EA9E77C023D74709005FC922 /* CSMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A423D74709005FC922 /* CSMImageView.swift */; };
 		EA9E77C123D74709005FC922 /* CSMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A523D74709005FC922 /* CSMView.swift */; };
 		EA9E77C223D74709005FC922 /* CSMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E77A623D74709005FC922 /* CSMString.swift */; };
+		EAEE541F24059A3A00ABA6EF /* CMPSBotBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE541E24059A3A00ABA6EF /* CMPSBotBE.swift */; };
 		EAFD2A6923F5E97800B6BD6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,10 +66,11 @@
 		EA28308723F46EFC00BEE070 /* ChatBootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBootViewController.swift; sourceTree = "<group>"; };
 		EA28308923F46F7B00BEE070 /* ChatBootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBootTableViewCell.swift; sourceTree = "<group>"; };
 		EA6850E72400327000C54656 /* PruebaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaViewController.swift; sourceTree = "<group>"; };
-		EA6850ED24004B3700C54656 /* CSMUserAlters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSMUserAlters.swift; path = "../../../../proyectos/entel-ios/ViveEntel/cmps/CoredataMedia/CoredataMedia/Classes/CSMUserAlters.swift"; sourceTree = "<group>"; };
 		EA6850F224007C7D00C54656 /* CMPSChatBotWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPSChatBotWS.swift; sourceTree = "<group>"; };
 		EA6850F4240081DF00C54656 /* CMPSChatBotBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPSChatBotBC.swift; sourceTree = "<group>"; };
-		EA7F0A6623FDF4290016A7F7 /* ALEXLABEL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALEXLABEL.swift; sourceTree = "<group>"; };
+		EA8101D2240484030070268D /* CMPSFirebaseWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPSFirebaseWS.swift; sourceTree = "<group>"; };
+		EA8101D424048E1F0070268D /* CMPSFirebaseBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPSFirebaseBC.swift; sourceTree = "<group>"; };
+		EA8418CA24019D99006DF7FA /* CSMUserAlters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMUserAlters.swift; sourceTree = "<group>"; };
 		EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA9E773123D6733A005FC922 /* MessagePrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagePrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9E773423D6733A005FC922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		EA9E77A423D74709005FC922 /* CSMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMImageView.swift; sourceTree = "<group>"; };
 		EA9E77A523D74709005FC922 /* CSMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
 		EA9E77A623D74709005FC922 /* CSMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+		EAEE541E24059A3A00ABA6EF /* CMPSBotBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPSBotBE.swift; sourceTree = "<group>"; };
 		EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB54136203A3212DBE9B5D1F /* Pods_MessagePrueba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagePrueba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,6 +142,7 @@
 				EA0C160D23D79E6C001656D0 /* RegistroViewController.swift */,
 				EA0C160B23D76E50001656D0 /* SPLASHViewController.swift */,
 				EA0C160923D76904001656D0 /* LoginViewController.swift */,
+				EA6850E72400327000C54656 /* PruebaViewController.swift */,
 			);
 			path = MESSAGE;
 			sourceTree = "<group>";
@@ -153,27 +158,17 @@
 		EA28308623F46EE000BEE070 /* CHATBOOT */ = {
 			isa = PBXGroup;
 			children = (
-				EA6850F124007C5800C54656 /* WS */,
-				EA6850F0240075C000C54656 /* BC */,
-				EA6850EF240075B800C54656 /* BE */,
 				EA28308723F46EFC00BEE070 /* ChatBootViewController.swift */,
 				EA28308923F46F7B00BEE070 /* ChatBootTableViewCell.swift */,
-				EA6850E72400327000C54656 /* PruebaViewController.swift */,
 			);
 			path = CHATBOOT;
-			sourceTree = "<group>";
-		};
-		EA6850EF240075B800C54656 /* BE */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BE;
 			sourceTree = "<group>";
 		};
 		EA6850F0240075C000C54656 /* BC */ = {
 			isa = PBXGroup;
 			children = (
 				EA6850F4240081DF00C54656 /* CMPSChatBotBC.swift */,
+				EA8101D424048E1F0070268D /* CMPSFirebaseBC.swift */,
 			);
 			path = BC;
 			sourceTree = "<group>";
@@ -181,6 +176,7 @@
 		EA6850F124007C5800C54656 /* WS */ = {
 			isa = PBXGroup;
 			children = (
+				EA8101D2240484030070268D /* CMPSFirebaseWS.swift */,
 				EA6850F224007C7D00C54656 /* CMPSChatBotWS.swift */,
 			);
 			path = WS;
@@ -207,15 +203,15 @@
 		EA9E773323D6733A005FC922 /* MessagePrueba */ = {
 			isa = PBXGroup;
 			children = (
-				EA0C1E3B23F4DB37009631A0 /* MESSAGE */,
-				EA9E778923D74709005FC922 /* ClasesGenerales */,
 				EA9E774823D67362005FC922 /* MessagePrueba.entitlements */,
-				EA28308623F46EE000BEE070 /* CHATBOOT */,
-				EA9E773423D6733A005FC922 /* AppDelegate.swift */,
+				EA9E778923D74709005FC922 /* ClasesGenerales */,
+				EAEE54162405963E00ABA6EF /* Iphone */,
+				EA6850F0240075C000C54656 /* BC */,
+				EA6850F124007C5800C54656 /* WS */,
+				EAEE541D24059A1800ABA6EF /* BE */,
 				EAFD2A6823F5E97800B6BD6D /* SceneDelegate.swift */,
-				EA9E773A23D6733A005FC922 /* Main.storyboard */,
+				EA9E773423D6733A005FC922 /* AppDelegate.swift */,
 				EA86C6CA23DB890000FFE0C9 /* GoogleService-Info.plist */,
-				EA9E773D23D6733C005FC922 /* Assets.xcassets */,
 				EA9E773F23D6733C005FC922 /* LaunchScreen.storyboard */,
 				EA9E774223D6733C005FC922 /* Info.plist */,
 			);
@@ -243,15 +239,14 @@
 				EA9E779923D74709005FC922 /* CSMButton.swift */,
 				EA9E779A23D74709005FC922 /* CSMTableView.swift */,
 				EA9E779B23D74709005FC922 /* Roboto */,
+				EA8418CA24019D99006DF7FA /* CSMUserAlters.swift */,
 				EA9E779F23D74709005FC922 /* CSMImageDownloaded.swift */,
-				EA6850ED24004B3700C54656 /* CSMUserAlters.swift */,
 				EA9E77A023D74709005FC922 /* CSMSwitch.swift */,
 				EA9E77A123D74709005FC922 /* CSMLocationManager.swift */,
 				EA9E77A323D74709005FC922 /* CSMWebServiceManager.swift */,
 				EA9E77A423D74709005FC922 /* CSMImageView.swift */,
 				EA9E77A523D74709005FC922 /* CSMView.swift */,
 				EA9E77A623D74709005FC922 /* CSMString.swift */,
-				EA7F0A6623FDF4290016A7F7 /* ALEXLABEL.swift */,
 			);
 			path = ClasesGenerales;
 			sourceTree = "<group>";
@@ -264,6 +259,49 @@
 				EA9E779E23D74709005FC922 /* Roboto-Bold.ttf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		EAEE54162405963E00ABA6EF /* Iphone */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE54182405967200ABA6EF /* Recursos */,
+				EAEE54192405968100ABA6EF /* Clases */,
+			);
+			path = Iphone;
+			sourceTree = "<group>";
+		};
+		EAEE54172405966100ABA6EF /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E773A23D6733A005FC922 /* Main.storyboard */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		EAEE54182405967200ABA6EF /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E773D23D6733C005FC922 /* Assets.xcassets */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
+		EAEE54192405968100ABA6EF /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				EA0C1E3B23F4DB37009631A0 /* MESSAGE */,
+				EA28308623F46EE000BEE070 /* CHATBOOT */,
+				EAEE54172405966100ABA6EF /* Vistas */,
+			);
+			path = Clases;
+			sourceTree = "<group>";
+		};
+		EAEE541D24059A1800ABA6EF /* BE */ = {
+			isa = PBXGroup;
+			children = (
+				EAEE541E24059A3A00ABA6EF /* CMPSBotBE.swift */,
+			);
+			path = BE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +424,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9E77B423D74709005FC922 /* CSMAutomaticStatusBarColor.swift in Sources */,
+				EAEE541F24059A3A00ABA6EF /* CMPSBotBE.swift in Sources */,
+				EA8101D3240484030070268D /* CMPSFirebaseWS.swift in Sources */,
 				EA9E77B623D74709005FC922 /* CSMButton.swift in Sources */,
 				EA9E77BD23D74709005FC922 /* CSMLocationManager.swift in Sources */,
 				EA9E77B323D74709005FC922 /* CSMCircularInfinityCollectionView.swift in Sources */,
@@ -396,10 +436,9 @@
 				EA9E77B523D74709005FC922 /* CSMTextField.swift in Sources */,
 				EA6850F5240081DF00C54656 /* CMPSChatBotBC.swift in Sources */,
 				EA9E77B123D74709005FC922 /* CSMImage.swift in Sources */,
-				EA7F0A6723FDF4290016A7F7 /* ALEXLABEL.swift in Sources */,
 				EA6850E82400327000C54656 /* PruebaViewController.swift in Sources */,
 				EA9E77C023D74709005FC922 /* CSMImageView.swift in Sources */,
-				EA6850EE24004B3700C54656 /* CSMUserAlters.swift in Sources */,
+				EA8418CB24019D99006DF7FA /* CSMUserAlters.swift in Sources */,
 				EA9E77AC23D74709005FC922 /* CSMNumber.swift in Sources */,
 				EA28308A23F46F7B00BEE070 /* ChatBootTableViewCell.swift in Sources */,
 				EA0C160C23D76E50001656D0 /* SPLASHViewController.swift in Sources */,
@@ -419,6 +458,7 @@
 				EA9E77AA23D74709005FC922 /* CSMDateManager.swift in Sources */,
 				EA9E774C23D7455C005FC922 /* MessageTableViewCell.swift in Sources */,
 				EA9E77B023D74709005FC922 /* CSMCustomStarsView.swift in Sources */,
+				EA8101D524048E1F0070268D /* CMPSFirebaseBC.swift in Sources */,
 				EA9E77AF23D74709005FC922 /* CSMSearchBar.swift in Sources */,
 				EA9E773523D6733A005FC922 /* AppDelegate.swift in Sources */,
 				EA9E77A723D74709005FC922 /* CSMTextView.swift in Sources */,
